@@ -1,0 +1,8 @@
+<div>
+  <h2>Detector de Mutantes</h2>
+  <textarea [(ngModel)]="dnaInput" placeholder="Ingresa el ADN aquí..." rows="5" maxlength="6"></textarea>
+  <button (click)="checkMutant()">Verificar Mutante</button>
+  <div *ngIf="result !== null">
+    {{ result ? '¡Es un mutante!' : 'No es un mutante.' }}
+  </div>
+</div>
